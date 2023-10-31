@@ -1,4 +1,5 @@
 import math
+from WorstCaseBuilder import *
 
 count_for_quicksort, count_for_quicksortM3 = 0, 0
 count_for_partition, count_for_partitionM3 = 0, 0
@@ -87,32 +88,27 @@ def partitionM3(A, p, r, isCount=False):
         if A[j] <= x:  # does this element belong on the low side?
             i += 1  # index of a new slot in the low side
             A[i], A[j] = A[j], A[i]  # put this element there
-
     A[i + 1], A[r] = A[r], A[i + 1]  # the pivot does just to the right of the low side
     return i + 1  # return the new index of the pivot
 
 
 def get_median(A, p, k, r):
-    if A[k] < A[r]:
-        if A[p] < A[k]:
+    if A[k] <= A[r]:
+        if A[p] <= A[k]:
             return k
         else:
-            if A[r] < A[p]:
+            if A[r] <= A[p]:
                 return r
             else:
                 return p
     else:
-        if A[k] < A[p]:
+        if A[k] <= A[p]:
             return k
         else:
-            if A[r] < A[p]:
+            if A[r] <= A[p]:
                 return p
             else:
                 return r
-
-
-def WorstCaseBuilder_quickSort(n):
-    return [i for i in range(n)]
 
 
 def get_TestRunForQuickSort(n):
@@ -122,3 +118,9 @@ def get_TestRunForQuickSort(n):
     quicksort(A, 0, None, isCount=True)
     result = [n, n * (n - 1) / 2, count_for_partition_comparison]
     print(result)
+#
+# A= [0, 1, 2.1, 3, 0.1, 2.1, 6, 3.1, 9.1, 9.1]
+# print("The input array is:")
+# print(A)
+# print("")
+# quicksortM3(A, 0, None, isPrint=True)

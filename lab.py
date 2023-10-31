@@ -1,10 +1,4 @@
 import math
-
-
-a=1
-def hello():
-    global a
-    a+=1
-    print(a)
-hello()
-print(a)
+from main import *
+A=[9.1, 6, 9.1]
+quicksortM3(A,0,None,isPrint=True)
