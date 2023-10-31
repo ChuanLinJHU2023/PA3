@@ -1,5 +1,5 @@
 from main import *
-Array=[9,8,1,2,7,6,3,8,5,10]
+Array=[9,11,1,2,7,6,3,8,5,10]
 print("The input array is:")
 print(Array)
 print("")
