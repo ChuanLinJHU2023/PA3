@@ -28,7 +28,7 @@ def quicksort(A, p=0, r=None, isPrint=False, isCount=False):
         quicksort(A, q + 1, r, isPrint=isPrint, isCount=isCount)  # recursively sort the high side
 
 
-def partition(A, p, r, isPrint=False, isCount=False):
+def partition(A, p, r, isCount=False):
     if isCount:
         global count_for_partition
         count_for_partition += 1
@@ -59,15 +59,15 @@ def quicksortM3(A, p=0, r=None, isPrint=False, isCount=False):
             information = "A[{}]={},A[{}]={},A[{}]={}".format(p, A[p], k, A[k], r, A[r])
             print(information)
         # Partition around the pivot, which ends up in A[q].
-        q = partitionM3(A, p, r)
+        q = partitionM3(A, p, r, isCount=isCount)
         if isPrint:
             information = "The partition element for A[{}:{}] is: {}".format(p, r, A[q])
             print(information)
             print(A)
             print("")
 
-        quicksortM3(A, p, q - 1, isPrint=isPrint)  # recursively sort the low side
-        quicksortM3(A, q + 1, r, isPrint=isPrint)  # recursively sort the high side
+        quicksortM3(A, p, q - 1, isPrint=isPrint, isCount=isCount)  # recursively sort the low side
+        quicksortM3(A, q + 1, r, isPrint=isPrint, isCount=isCount)  # recursively sort the high side
 
 
 def partitionM3(A, p, r, isCount=False):
@@ -117,6 +117,14 @@ def get_TestRunForQuickSort(n):
     A = WorstCaseBuilder_quickSort(n)
     quicksort(A, 0, None, isCount=True)
     result = [n, n * (n - 1) / 2, count_for_partition_comparison]
+    print(result)
+
+def get_TestRunForQuickSortM3(n):
+    global count_for_quicksortM3, count_for_partitionM3, count_for_partitionM3_comparison
+    count_for_quicksortM3, count_for_partitionM3, count_for_partitionM3_comparison = 0, 0, 0
+    A = WorstCaseBuilder_quickSortM3(n)
+    quicksortM3(A, 0, None, isCount=True)
+    result = [n, n*n/5, count_for_partitionM3_comparison]
     print(result)
 
 
