@@ -28,7 +28,7 @@ def quicksort(A, p=0, r=None, isPrint=False, isCount=False):
         quicksort(A, q + 1, r, isPrint=isPrint, isCount=isCount)  # recursively sort the high side
 
 
-def partition(A, p, r, isCount=False):
+def partition(A, p, r, isPrint=False, isCount=False):
     if isCount:
         global count_for_partition
         count_for_partition += 1
@@ -70,7 +70,7 @@ def quicksortM3(A, p=0, r=None, isPrint=False, isCount=False):
         quicksortM3(A, q + 1, r, isPrint=isPrint, isCount=isCount)  # recursively sort the high side
 
 
-def partitionM3(A, p, r, isCount=False):
+def partitionM3(A, p, r, isPrint=False, isCount=False):
     if isCount:
         global count_for_partitionM3
         count_for_partitionM3 += 1
@@ -116,7 +116,8 @@ def get_TestRunForQuickSort(n):
     count_for_quicksort, count_for_partition, count_for_partition_comparison = 0, 0, 0
     A = WorstCaseBuilder_quickSort(n)
     quicksort(A, 0, None, isCount=True)
-    result = [n, n * (n - 1) / 2, count_for_partition_comparison]
+    result = [n, count_for_partition, count_for_quicksort, count_for_partition_comparison, \
+              n-1, 2*n-1, n*(n - 1)/2]
     print(result)
 
 def get_TestRunForQuickSortM3(n):
@@ -124,7 +125,8 @@ def get_TestRunForQuickSortM3(n):
     count_for_quicksortM3, count_for_partitionM3, count_for_partitionM3_comparison = 0, 0, 0
     A = WorstCaseBuilder_quickSortM3(n)
     quicksortM3(A, 0, None, isCount=True)
-    result = [n, n*n/5, count_for_partitionM3_comparison]
+    result = [n, count_for_partitionM3, count_for_quicksortM3, count_for_partitionM3_comparison, \
+              n/2, n, n*n/5]
     print(result)
 
 

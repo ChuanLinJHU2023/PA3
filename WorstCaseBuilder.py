@@ -72,3 +72,4 @@ def get_median_forBuild(A, p, k, r):
 # The original array is A=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # After conversion using dict {4: 0.1, 5: 2.1, 2: 2.11, 7: 3.1, 8: 9.1, 9: 9.11}
 # The array is  A= [0, 1, 2.11, 3, 0.1, 2.1, 6, 3.1, 9.1, 9.11]
+
