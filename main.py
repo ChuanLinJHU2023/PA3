@@ -118,8 +118,9 @@ def get_TestRunForQuickSort(n):
     quicksort(A, 0, None, isCount=True)
     result = [n, n * (n - 1) / 2, count_for_partition_comparison]
     print(result)
-#
-# A= [0, 1, 2.1, 3, 0.1, 2.1, 6, 3.1, 9.1, 9.1]
+
+
+# A= [0, 1, 2.11, 3, 0.1, 2.1, 6, 3.1, 9.1, 9.11]
 # print("The input array is:")
 # print(A)
 # print("")
