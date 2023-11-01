@@ -1,3 +1,4 @@
+# TestRunForQuickSort.py is the test run to measure the asymptotic behavior of quicksort
 from main import *
 print(["n",  "TotalNumberOfExecutionsOfPartition", "TotalNumberOfExecutionsOfQuickSort", "TotalNumberOfComparisonsWithinPartition", \
        "n-1", "2n-1", "n(n - 1)/2" ])

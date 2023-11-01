@@ -1,5 +1,6 @@
 The input array is:
 [19, 14, 14, 2, 42, 87, 70, 49, 10, 63, 22, 34, 58, 14, 82, 0, 57, 49, 81, 35]
+TraceRun2_Output is the output of TraceRun2.py, showing the correctness of quicksort using median of the three partition
 
 A[0]=19,A[9]=63,A[19]=35
 The partition element for A[0:19] is: 35

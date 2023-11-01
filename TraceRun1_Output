@@ -1,3 +1,5 @@
+TraceRun1_Output is the output of TraceRun1.py, showing the correctness of quicksort using median of the three partition
+
 The input array is:
 [9, 11, 1, 2, 7, 6, 3, 8, 5, 10]
 

@@ -1,3 +1,5 @@
+WorstCaseBuilder_Example provides an example of the worst case for quicksort using median of the three. This example is built by WorstCaseBuilder.py
+
 The input array is:
 [0, 1, 2.11, 3, 0.1, 2.1, 6, 3.1, 9.1, 9.11]
 

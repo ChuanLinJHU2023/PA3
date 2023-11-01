@@ -1,3 +1,4 @@
+TestRunForQuickSort_Output is the output of TestRunForQuickSort, measuring the asymptotic behavior of quicksort
 ['n', 'TotalNumberOfExecutionsOfPartition', 'TotalNumberOfExecutionsOfQuickSort', 'TotalNumberOfComparisonsWithinPartition', 'n-1', '2n-1', 'n(n - 1)/2']
 [3, 2, 5, 3, 2, 5, 3.0]
 [4, 3, 7, 6, 3, 7, 6.0]

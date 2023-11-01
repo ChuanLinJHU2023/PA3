@@ -1,5 +1,5 @@
 MainPDF.pdf provides all the relevant information about the assignment. It is the first file to view.
-main.py implements the quicksort and quicksort using median of the three partition
+main.py implements the quicksort and quicksort using median of the three partition. This program is the core of other programs.
 
 TraceRun1.py is the first trace run to show the correctness of quicksort using median of the three partition
 TraceRun2.py is the second trace run to show the correctness of quicksort using median of the three partition

@@ -1,3 +1,4 @@
+# TestRunForQuickSortM3_Output is the output of TestRunForQuickSortM3, measuring the asymptotic behavior of quicksort using median of the three partition
 ['n', 'TotalNumberOfExecutionsOfPartition', 'TotalNumberOfExecutionsOfQuickSort', 'TotalNumberOfComparisonsWithinPartition', 'n/2', 'n', 'n*n/5']
 [3, 1, 3, 2, 1.5, 3, 1.8]
 [4, 2, 5, 4, 2.0, 4, 3.2]
