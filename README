@@ -1,0 +1,26 @@
+MainPDF.pdf provides all the relevant information about the assignment. It is the first file to view.
+main.py implements the quicksort and quicksort using median of the three partition
+
+TraceRun1.py is the first trace run to show the correctness of quicksort using median of the three partition
+TraceRun2.py is the second trace run to show the correctness of quicksort using median of the three partition
+TraceRun1_Output is the output of TraceRun1.py, showing the correctness of quicksort using median of the three partition
+TraceRun2_Output is the output of TraceRun2.py, showing the correctness of quicksort using median of the three partition
+
+TestRunForQuickSort.py is the test run to measure the asymptotic behavior of quicksort
+TestRunForQuickSortM3.py is the test run to measure the asymptotic behavior of quicksort using median of the three partition
+TestRunForQuickSort_Output is the output of TestRunForQuickSort, measuring the asymptotic behavior of quicksort
+TestRunForQuickSortM3_Output is the output of TestRunForQuickSortM3, measuring the asymptotic behavior of quicksort using median of the three partition
+
+ComparisonForQuickSortM3.py draws the graph to compare algorithm’s worst-case asymptotic behavior to the achieved asymptotic behavior of the program
+ComparisonForQuickSortM3_Output is the output of ComparisonForQuickSortM3.py, comparing algorithm’s worst-case asymptotic behavior to the achieved asymptotic behavior of the program
+
+WorstCaseBuilder.py provides the method to build the worst case for quicksort and the worst case for quicksort using median of three partition
+WorstCaseBuilder_Example provides an example of the worst case for quicksort using median of the three. This example is built by WorstCaseBuilder.py
+
+tools.py provides some simple math functions for other programs.
+
+The compiler is python 3.11
+The IDE is Pycharm
+For every py file, the instruction to run it is "python xxx.py", where xxx.py is the name of the file that you want to run.
+
+

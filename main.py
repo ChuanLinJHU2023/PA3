@@ -130,8 +130,8 @@ def get_TestRunForQuickSortM3(n):
     print(result)
 
 
-# A= [0, 1, 2.11, 3, 0.1, 2.1, 6, 3.1, 9.1, 9.11]
-# print("The input array is:")
-# print(A)
-# print("")
-# quicksortM3(A, 0, None, isPrint=True)
+A= [0, 1, 2.11, 3, 0.1, 2.1, 6, 3.1, 9.1, 9.11]
+print("The input array is:")
+print(A)
+print("")
+quicksortM3(A, 0, None, isPrint=True)
